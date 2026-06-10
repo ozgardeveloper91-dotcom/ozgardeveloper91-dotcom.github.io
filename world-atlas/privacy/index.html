@@ -1,21 +1,213 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>World Atlas Privacy Policy</title>
+  <style>
+    :root {
+      --primary: #00796b;
+      --primary-dark: #004d40;
+      --accent: #ffc857;
+      --bg: #f7fbfa;
+      --card: #ffffff;
+      --text: #17211f;
+      --muted: #5f6f6b;
+      --border: #dce8e5;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #e6f4f1 0%, var(--bg) 42%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      color: white;
+      padding: 56px 20px 72px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 22px;
+      background: var(--accent);
+      display: grid;
+      place-items: center;
+      color: var(--primary-dark);
+      font-size: 38px;
+      font-weight: 800;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 52px);
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 12px auto 0;
+      max-width: 680px;
+      color: #d8f3ee;
+      font-size: 18px;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: -42px auto 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 18px 45px rgba(0, 77, 64, 0.12);
+    }
+
+    .updated {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #e8f5f3;
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      margin: 28px 0 8px;
+      color: var(--primary-dark);
+      font-size: 22px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 20px 0;
+    }
+
+    .info {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fbfffe;
+    }
+
+    .info strong {
+      display: block;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 0 20px 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <h1>World Atlas Privacy Policy</h1>
-  <p>Effective date: June 10, 2026</p>
+  <section class="hero">
+    <div class="logo">🌍</div>
+    <h1>World Atlas Privacy Policy</h1>
+    <p>Clear information about what World Atlas stores, uses, and shares.</p>
+  </section>
 
-  <p>World Atlas stores favourites, settings, notes, tags, and cached country data locally on your device.</p>
+  <main>
+    <div class="card">
+      <div class="updated">Effective date: June 10, 2026</div>
 
-  <p>The app uses REST Countries API for public country information.</p>
+      <p>
+        World Atlas is a country information app that lets users browse, compare,
+        save, and share country details.
+      </p>
 
-  <p>The app uses Google AdMob to show ads. Google may collect or use device information for ad delivery, measurement, fraud prevention, and compliance.</p>
+      <div class="grid">
+        <div class="info">
+          <strong>No account required</strong>
+          World Atlas does not require sign in and does not create user accounts.
+        </div>
+        <div class="info">
+          <strong>Local app data</strong>
+          Favourites, settings, notes, tags, and cached country data are stored locally on your device.
+        </div>
+        <div class="info">
+          <strong>Public country data</strong>
+          Country information is provided by REST Countries API v3.1.
+        </div>
+      </div>
 
-  <p>The app does not require sign in and does not create user accounts.</p>
+      <h2>Information Stored On Device</h2>
+      <p>
+        The app stores favourites, app settings, notes, tags, and cached country data
+        locally on your device. This information is used only to provide app features
+        such as favourites, faster loading, theme preferences, language preferences,
+        and cache management.
+      </p>
 
-  <p>Contact: ozgardeveloper91@gmail.com</p>
+      <h2>Data Sources</h2>
+      <p>
+        Country information is provided by REST Countries API v3.1. This includes
+        country names, flags, capitals, population, area, currencies, languages,
+        maps, time zones, calling codes, borders, and related public country data.
+      </p>
+      <p>
+        Data source:
+        <a href="https://restcountries.com/" target="_blank" rel="noopener">REST Countries</a>
+      </p>
+
+      <h2>Advertising</h2>
+      <p>
+        The app uses Google AdMob to show ads. Google and its partners may collect
+        or use device information, advertising identifiers, approximate location,
+        app interactions, diagnostics, and other data for ad delivery, measurement,
+        fraud prevention, and compliance.
+      </p>
+      <p>
+        Learn more:
+        <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener">
+          Google Privacy Policy
+        </a>
+      </p>
+
+      <h2>Sharing</h2>
+      <p>
+        When users choose to share country information, Android's system share sheet
+        is used. The selected destination app controls how that shared content is handled.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, contact:
+        <a href="ozgardeveloper91@gmail.com">ozgardeveloper91@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 World Atlas. All rights reserved.
+  </footer>
 </body>
 </html>
