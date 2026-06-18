@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | NearServices</title>
+  <meta name="description" content="Privacy Policy for the NearServices Android app." />
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7fbff;
+      --panel: #ffffff;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #dbe7f3;
+      --blue: #1565c0;
+      --teal: #14b8a6;
+      --orange: #f97316;
+      --shadow: 0 20px 60px rgba(17, 24, 39, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 5%, rgba(20, 184, 166, 0.18), transparent 32rem),
+        radial-gradient(circle at 90% 0%, rgba(21, 101, 192, 0.15), transparent 30rem),
+        linear-gradient(180deg, #f8fcff 0%, var(--bg) 45%, #ffffff 100%);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 56px 0 28px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      padding: 34px;
+      border: 1px solid rgba(21, 101, 192, 0.14);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.82);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: var(--blue);
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--blue), var(--teal));
+      box-shadow: 0 12px 28px rgba(21, 101, 192, 0.24);
+    }
+
+    .pin {
+      width: 23px;
+      height: 23px;
+      border-radius: 50% 50% 50% 0;
+      background: #fff;
+      transform: rotate(-45deg);
+      position: relative;
+    }
+
+    .pin::after {
+      content: "";
+      position: absolute;
+      inset: 7px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 6px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: #344054;
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    main {
+      padding: 10px 0 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 16px;
+    }
+
+    section {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: var(--panel);
+      box-shadow: 0 12px 36px rgba(17, 24, 39, 0.05);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    li + li {
+      margin-top: 7px;
+    }
+
+    a {
+      color: var(--blue);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      border-color: rgba(249, 115, 22, 0.25);
+      background: #fff8ed;
+    }
+
+    .contact {
+      border-color: rgba(20, 184, 166, 0.28);
+      background: linear-gradient(135deg, rgba(20, 184, 166, 0.10), rgba(21, 101, 192, 0.08)), #fff;
+    }
+
+    footer {
+      padding: 26px 0 42px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    @media (min-width: 860px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .wide {
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="hero">
+        <div class="brand">
+          <span class="logo" aria-hidden="true"><span class="pin"></span></span>
+          <span>NearServices</span>
+        </div>
+        <div>
+          <h1>Privacy Policy</h1>
+          <p class="lead">
+            This Privacy Policy explains how NearServices handles information when you use the app to find nearby services, view routes, save places, and share locations.
+          </p>
+        </div>
+        <div class="meta">
+          <span class="pill">Last updated: June 18, 2026</span>
+          <span class="pill">App: NearServices</span>
+          <span class="pill">Platform: Android</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap grid">
+      <section class="wide notice">
+        <h2>Important Publishing Note</h2>
+        <p>
+          Replace <strong>YOUR_SUPPORT_EMAIL@example.com</strong> and <strong>YOUR_DEVELOPER_NAME</strong> with your real Play Console developer contact details before publishing this page.
+        </p>
+      </section>
+
+      <section>
+        <h2>Information We Use</h2>
+        <p>NearServices may access or use the following information to provide app features:</p>
+        <ul>
+          <li><strong>Location data:</strong> Used to show your current position, nearby services, distance, and routes.</li>
+          <li><strong>Saved places:</strong> Places you choose to save, including name, category, coordinates, and saved date.</li>
+          <li><strong>Recently viewed places:</strong> A local history of places you tapped so you can revisit them faster.</li>
+          <li><strong>Place reports:</strong> If you report a wrong, closed, duplicate, or other issue, the report reason may be stored locally.</li>
+          <li><strong>Advertising data:</strong> Google AdMob may collect or use identifiers and device data to serve ads and measure performance.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How We Use Information</h2>
+        <p>We use information only to support core app features, including:</p>
+        <ul>
+          <li>Finding restaurants, gas stations, banks, ATMs, hospitals, police stations, and pharmacies near you.</li>
+          <li>Showing route, distance, and estimated drive time from your current location.</li>
+          <li>Saving favorite places on your device.</li>
+          <li>Sharing your current location or a selected place when you choose to share it.</li>
+          <li>Improving reliability through local reports and recent-place history.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Location Permission</h2>
+        <p>
+          NearServices requests location permission so it can show nearby results, current position, distance, and route information. You can deny or disable location permission at any time from your Android device settings. Some features may not work without location access.
+        </p>
+      </section>
+
+      <section>
+        <h2>Local Storage</h2>
+        <p>
+          Saved places, recent places, app settings, and local reports are stored on your device. You can clear saved and recent data from the app settings screen. Uninstalling the app may also remove locally stored data, depending on your Android backup settings.
+        </p>
+      </section>
+
+      <section>
+        <h2>Sharing</h2>
+        <p>
+          NearServices lets you share your current location or selected place through apps installed on your phone, such as WhatsApp or SMS. Sharing only happens when you choose a share action.
+        </p>
+      </section>
+
+      <section>
+        <h2>Third-Party Services</h2>
+        <p>NearServices uses third-party services that may process data under their own policies:</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a></li>
+          <li><a href="https://policies.google.com/technologies/ads" rel="noopener">Google Advertising Policies</a></li>
+          <li><a href="https://developers.google.com/maps/terms" rel="noopener">Google Maps Platform Terms</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data Sharing</h2>
+        <p>
+          We do not sell your personal information. Data may be shared with Google services as needed to provide maps, places, routes, and advertising features. Information may also be shared if required by law or to protect app security.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Security</h2>
+        <p>
+          We aim to handle data responsibly and rely on Android platform protections and Google service security for supported features. No method of electronic storage or transmission is completely secure, so we cannot guarantee absolute security.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data Retention and Deletion</h2>
+        <p>
+          Local saved places and recent places remain on your device until you delete them, clear app data, or uninstall the app. If you want help with privacy questions, contact us using the email below.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children's Privacy</h2>
+        <p>
+          NearServices is not designed for children under 13. We do not knowingly collect personal information from children. If you believe a child has provided information through the app, contact us so we can review the issue.
+        </p>
+      </section>
+
+      <section>
+        <h2>Changes to This Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. Updates will be posted on this page with a new "Last updated" date.
+        </p>
+      </section>
+
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <p>
+          Developer: <strong>YOUR_DEVELOPER_NAME</strong><br />
+          Email: <a href="mailto:YOUR_SUPPORT_EMAIL@example.com">YOUR_SUPPORT_EMAIL@example.com</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      NearServices Privacy Policy
+    </div>
+  </footer>
+</body>
+</html>
