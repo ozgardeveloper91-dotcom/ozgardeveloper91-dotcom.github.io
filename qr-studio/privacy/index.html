@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR Studio Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for QR Studio Android app.">
+  <style>
+    :root {
+      --bg: #f5fbfc;
+      --surface: #ffffff;
+      --surface-soft: #eef8fb;
+      --text: #102a43;
+      --muted: #526d82;
+      --primary: #1a73e8;
+      --primary-dark: #116466;
+      --border: #d6e4ed;
+      --success: #0f766e;
+      --shadow: 0 18px 50px rgba(16, 42, 67, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(26, 115, 232, 0.12), transparent 32rem),
+        linear-gradient(135deg, #e6fffa 0%, var(--bg) 42%, #f7fbff 100%);
+      line-height: 1.65;
+    }
+
+    .page {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 22px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .app-icon {
+      width: 92px;
+      height: 92px;
+      border-radius: 22px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+      box-shadow: var(--shadow);
+    }
+
+    .qr-mark {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 4px;
+    }
+
+    .qr-mark span {
+      background: #ffffff;
+      border-radius: 2px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .subtitle {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .shell {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(214, 228, 237, 0.9);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .summary div {
+      padding: 20px;
+      border-right: 1px solid var(--border);
+    }
+
+    .summary div:last-child {
+      border-right: 0;
+    }
+
+    .label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .value {
+      display: block;
+      margin-top: 6px;
+      font-weight: 800;
+    }
+
+    main {
+      padding: 34px;
+    }
+
+    section {
+      margin: 0 0 34px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.55rem;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .notice {
+      padding: 18px 20px;
+      border: 1px solid #b9e6df;
+      border-radius: 14px;
+      background: #ecfffb;
+      color: #164e46;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 14px;
+    }
+
+    .card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .card span {
+      color: var(--muted);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+
+    th,
+    td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-soft);
+      font-size: 0.86rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 6px;
+      background: #edf2f7;
+      color: #0f172a;
+    }
+
+    a {
+      color: var(--primary);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 22px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        padding: 28px 0;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .summary,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .summary div {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .summary div:last-child {
+        border-bottom: 0;
+      }
+
+      main {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="app-icon" aria-hidden="true">
+        <div class="qr-mark">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+      <div>
+        <h1>QR Studio Privacy Policy</h1>
+        <p class="subtitle">A simple, clear policy for how QR Studio handles QR text, camera scans, selected images, and saved QR codes.</p>
+      </div>
+    </header>
+
+    <div class="shell">
+      <div class="summary" aria-label="Privacy summary">
+        <div>
+          <span class="label">Effective</span>
+          <span class="value">June 25, 2026</span>
+        </div>
+        <div>
+          <span class="label">Accounts</span>
+          <span class="value">Not required</span>
+        </div>
+        <div>
+          <span class="label">Ads</span>
+          <span class="value">None</span>
+        </div>
+        <div>
+          <span class="label">Analytics</span>
+          <span class="value">None</span>
+        </div>
+        <div>
+          <span class="label">Developer</span>
+          <span class="value">Imran Fida</span>
+        </div>
+      </div>
+
+      <main>
+        <section>
+          <div class="notice">
+            QR Studio does not require an account, does not sell personal data, and does not include advertising or analytics tracking. Internet access is used only for QR Server API features.
+          </div>
+        </section>
+
+        <section>
+          <h2>At A Glance</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Area</th>
+                <th>What QR Studio Does</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Camera access</td>
+                <td>Used only when you scan QR codes with the camera.</td>
+              </tr>
+              <tr>
+                <td>Image access</td>
+                <td>Used only when you choose an image to decode.</td>
+              </tr>
+              <tr>
+                <td>Internet access</td>
+                <td>Used to generate or decode QR codes through QR Server API.</td>
+              </tr>
+              <tr>
+                <td>Saved files</td>
+                <td>Generated QR images can be saved to your device gallery.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Information We Collect</h2>
+          <p>QR Studio does not collect personal information such as your name, email address, phone number, contacts, location, or account details.</p>
+          <p>The app may process the following information only when you use a related feature:</p>
+          <div class="cards">
+            <div class="card">
+              <strong>QR text you enter</strong>
+              <span>Used to generate a QR code image.</span>
+            </div>
+            <div class="card">
+              <strong>Camera scan result</strong>
+              <span>Used to show the scanned content and optionally copy it into the generator.</span>
+            </div>
+            <div class="card">
+              <strong>Selected image</strong>
+              <span>Used when you choose an image for QR decoding.</span>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>How The App Uses Permissions</h2>
+          <p><strong>Camera:</strong> QR Studio requests camera permission so you can scan QR codes. Camera access is used only while scanning.</p>
+          <p><strong>Photos and storage:</strong> When you choose an image to decode, QR Studio accesses only the image you select. When you save a generated QR code, the app writes the image to your device gallery, usually under <code>Pictures/QRCodes</code>.</p>
+          <p><strong>Internet:</strong> QR Studio uses internet access to call the QR Server API for QR generation and decoding.</p>
+        </section>
+
+        <section>
+          <h2>Third-Party Service</h2>
+          <p>QR Studio uses the free QR Server API provided at <code>api.qrserver.com</code>.</p>
+          <ul>
+            <li><code>https://api.qrserver.com/v1/create-qr-code/</code></li>
+            <li><code>https://api.qrserver.com/v1/read-qr-code/</code></li>
+          </ul>
+          <p>When you generate a QR code, the text or URL you enter is sent to QR Server so the QR image can be created. When you decode an image through the server feature, the selected image is uploaded to QR Server so the QR code can be read.</p>
+          <p>Please avoid entering or uploading sensitive information if you do not want that content sent to the QR Server API.</p>
+        </section>
+
+        <section>
+          <h2>What We Do Not Do</h2>
+          <ul>
+            <li>We do not create user accounts.</li>
+            <li>We do not sell, rent, or trade user data.</li>
+            <li>We do not track users across apps or websites.</li>
+            <li>We do not access contacts, precise location, SMS, microphone, or call logs.</li>
+            <li>We do not use advertising SDKs or analytics SDKs.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Data Storage</h2>
+          <p>QR Studio stores generated QR images only when you choose to save them. Saved images remain on your device and can be deleted from your gallery or file manager.</p>
+          <p>The app does not maintain a cloud database of your scans, generated QR codes, or selected images.</p>
+        </section>
+
+        <section>
+          <h2>Children's Privacy</h2>
+          <p>QR Studio is a general utility app and is not directed specifically to children. The app does not knowingly collect personal information from children.</p>
+        </section>
+
+        <section>
+          <h2>Security</h2>
+          <p>QR Studio uses HTTPS endpoints for QR Server API requests. No method of internet transmission is completely risk-free, so avoid using the app to process passwords, private keys, financial details, or other highly sensitive content.</p>
+        </section>
+
+        <section>
+          <h2>Changes To This Policy</h2>
+          <p>This policy may be updated when app features or data practices change. The latest version should be published in this repository and linked from the app listing.</p>
+        </section>
+
+        <section>
+          <h2>Contact</h2>
+          <p>ozgardeveloper91@gmail.com</p>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      QR Studio Privacy Policy
+    </footer>
+  </div>
+</body>
+</html>
